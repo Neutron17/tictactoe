@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <errno.h>
+#include <signal.h>
 #include "nmath.h"
 #include "utils.h"
 #include "color.h"
@@ -16,8 +17,10 @@ bool isFileEmpty(FILE *fptr);
 void printBoard(const char board[3][3]);
 void handleInput();
 void login();
+void handler(int signal);
 
 int main(int argc, char *argv[]) {
+	signal(SIGINT, handler);
 	parseArgs(argc, argv);
     volatile bool running = true;
     //cprintf(Red, "%d\n", (char)0x2020);
@@ -88,3 +91,7 @@ void login() {
     //raise(1);
 }
 
+void handler(int signal) {
+	// TODO Are you sure question
+	cprintf(Red, "Signal: %d\n", signal);
+}
