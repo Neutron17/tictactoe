@@ -68,6 +68,11 @@ CMakeFiles/tictactoe.dir/src/main.c.o
  /data/data/com.termux/files/usr/include/sys/ucontext.h
  /data/data/com.termux/files/usr/include/sys/user.h
  /data/data/com.termux/files/usr/include/android/legacy_signal_inlines.h
+ /data/data/com.termux/files/usr/include/time.h
+ /data/data/com.termux/files/usr/include/sys/time.h
+ /data/data/com.termux/files/usr/include/linux/time.h
+ /data/data/com.termux/files/usr/include/linux/time_types.h
+ /data/data/com.termux/files/usr/include/sys/select.h
  /data/data/com.termux/files/usr/include/ctype.h
  /data/data/com.termux/files/home/tictactoe/src/ntr/utils.h
  /data/data/com.termux/files/home/tictactoe/src/ntr/color.h

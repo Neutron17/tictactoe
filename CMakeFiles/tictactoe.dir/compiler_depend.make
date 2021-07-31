@@ -67,6 +67,11 @@ CMakeFiles/tictactoe.dir/src/main.c.o: src/main.c \
   /data/data/com.termux/files/usr/include/sys/ucontext.h \
   /data/data/com.termux/files/usr/include/sys/user.h \
   /data/data/com.termux/files/usr/include/android/legacy_signal_inlines.h \
+  /data/data/com.termux/files/usr/include/time.h \
+  /data/data/com.termux/files/usr/include/sys/time.h \
+  /data/data/com.termux/files/usr/include/linux/time.h \
+  /data/data/com.termux/files/usr/include/linux/time_types.h \
+  /data/data/com.termux/files/usr/include/sys/select.h \
   /data/data/com.termux/files/usr/include/ctype.h \
   src/ntr/utils.h \
   src/ntr/color.h
@@ -242,12 +247,6 @@ CMakeFiles/tictactoe.dir/src/ntr/utils.c.o: src/ntr/utils.c \
   /data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h
 
 
-/data/data/com.termux/files/usr/include/sys/select.h:
-
-/data/data/com.termux/files/usr/include/linux/time_types.h:
-
-/data/data/com.termux/files/usr/include/time.h:
-
 src/ntr/intconver.h:
 
 /data/data/com.termux/files/usr/include/setjmp.h:
@@ -261,6 +260,12 @@ src/ntr/errHandler.c:
 src/ntr/utils.h:
 
 /data/data/com.termux/files/usr/include/ctype.h:
+
+/data/data/com.termux/files/usr/include/sys/select.h:
+
+/data/data/com.termux/files/usr/include/linux/time_types.h:
+
+/data/data/com.termux/files/usr/include/time.h:
 
 /data/data/com.termux/files/usr/include/android/legacy_signal_inlines.h:
 
@@ -284,11 +289,11 @@ src/ntr/utils.h:
 
 /data/data/com.termux/files/usr/include/signal.h:
 
+src/ntr/intconver.c:
+
 /data/data/com.termux/files/usr/include/linux/time.h:
 
 /data/data/com.termux/files/usr/include/sys/time.h:
-
-src/ntr/intconver.c:
 
 /data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h:
 
