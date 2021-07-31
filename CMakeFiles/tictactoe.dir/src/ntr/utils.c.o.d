@@ -1,35 +1,67 @@
 CMakeFiles/tictactoe.dir/src/ntr/utils.c.o: \
- /home/neutron/Documents/tictactoe/src/ntr/utils.c \
- /usr/include/stdc-predef.h \
- /home/neutron/Documents/tictactoe/src/ntr/utils.h /usr/include/time.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
- /usr/include/bits/time.h /usr/include/bits/types.h \
- /usr/include/bits/timesize.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/types/clock_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
- /usr/include/bits/endianness.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/timer_t.h \
- /usr/include/bits/types/struct_itimerspec.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
- /usr/include/sys/types.h /usr/include/bits/stdint-intn.h \
- /usr/include/endian.h /usr/include/bits/byteswap.h \
- /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/stdio_lim.h
+  /data/data/com.termux/files/home/tictactoe/src/ntr/utils.c \
+  /data/data/com.termux/files/home/tictactoe/src/ntr/utils.h \
+  /data/data/com.termux/files/usr/include/stdio.h \
+  /data/data/com.termux/files/usr/include/sys/cdefs.h \
+  /data/data/com.termux/files/usr/include/android/versioning.h \
+  /data/data/com.termux/files/usr/include/android/api-level.h \
+  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
+  /data/data/com.termux/files/usr/include/android/ndk-version.h \
+  /data/data/com.termux/files/usr/include/sys/types.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stddef.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/__stddef_max_align_t.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stdint.h \
+  /data/data/com.termux/files/usr/include/stdint.h \
+  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
+  /data/data/com.termux/files/usr/include/linux/types.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/int-ll64.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  /data/data/com.termux/files/usr/include/asm-generic/bitsperlong.h \
+  /data/data/com.termux/files/usr/include/linux/posix_types.h \
+  /data/data/com.termux/files/usr/include/linux/stddef.h \
+  /data/data/com.termux/files/usr/include/linux/compiler_types.h \
+  /data/data/com.termux/files/usr/include/linux/compiler.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/posix_types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/posix_types.h \
+  /data/data/com.termux/files/usr/include/bits/pthread_types.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stdarg.h \
+  /data/data/com.termux/files/usr/include/string.h \
+  /data/data/com.termux/files/usr/include/xlocale.h \
+  /data/data/com.termux/files/usr/include/bits/strcasecmp.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h \
+  /data/data/com.termux/files/usr/include/asm-generic/fcntl.h \
+  /data/data/com.termux/files/usr/include/bits/seek_constants.h \
+  /data/data/com.termux/files/usr/include/bits/struct_file.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stdbool.h \
+  /data/data/com.termux/files/usr/include/time.h \
+  /data/data/com.termux/files/usr/include/sys/time.h \
+  /data/data/com.termux/files/usr/include/linux/time.h \
+  /data/data/com.termux/files/usr/include/linux/time_types.h \
+  /data/data/com.termux/files/usr/include/sys/select.h \
+  /data/data/com.termux/files/usr/include/signal.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/sigcontext.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/sve_context.h \
+  /data/data/com.termux/files/usr/include/bits/signal_types.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/limits.h \
+  /data/data/com.termux/files/usr/include/limits.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/float.h \
+  /data/data/com.termux/files/usr/include/linux/limits.h \
+  /data/data/com.termux/files/usr/include/bits/posix_limits.h \
+  /data/data/com.termux/files/usr/include/linux/signal.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/signal.h \
+  /data/data/com.termux/files/usr/include/asm-generic/signal.h \
+  /data/data/com.termux/files/usr/include/asm-generic/signal-defs.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/siginfo.h \
+  /data/data/com.termux/files/usr/include/asm-generic/siginfo.h \
+  /data/data/com.termux/files/usr/include/bits/timespec.h \
+  /data/data/com.termux/files/usr/include/sys/ucontext.h \
+  /data/data/com.termux/files/usr/include/sys/user.h \
+  /data/data/com.termux/files/usr/include/android/legacy_signal_inlines.h \
+  /data/data/com.termux/files/usr/include/stdlib.h \
+  /data/data/com.termux/files/usr/include/alloca.h \
+  /data/data/com.termux/files/usr/include/bits/wait.h \
+  /data/data/com.termux/files/usr/include/linux/wait.h \
+  /data/data/com.termux/files/usr/include/malloc.h \
+  /data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h

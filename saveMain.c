@@ -4,18 +4,18 @@
 #include <string.h>
 #include <errno.h>
 #include <signal.h>
-#include <ctype.h>
+#include "nmath.h"
 #include "utils.h"
 #include "color.h"
 
-typedef enum Player {
-	User,
-	Computer
-} Player;
+struct Serializer {
+    char *board[3][3];
+};
 
 void parseArgs(int argc, char *argv[]);
+
 void printBoard(const char board[3][3]);
-void handleInput(const int inp, char *board,Player pl);
+void handleInput(const int inp, char *board[3][3]);
 int getInput();
 void login();
 void handler(int signal);
@@ -41,20 +41,23 @@ int main(int argc, char *argv[]) {
         fread(board, sizeof(board), 1, fptr);
         fclose(fptr);
     }
-
-    Player pl = User;
+    // TODO write ser instead of the board
+   /* struct Serializer ser = {
+        &board
+    };*/
+    // main loop
     while(running) {
+
         printBoard(board);
-        handleInput(getInput(), board, pl);
-	if(pl) pl--;
-	else pl++;
+        handleInput(getInput(), &board);
+	printf("le%s\n", strerror(errno));
+//	break;
     }
-    return 0;
+	return 0;
 }
 void parseArgs(int argc, char *argv[]) {
     if(argc != 1) {
-        fcprintf(stderr, Yellow, 
-	"Warning: Unimplemented feature: Arguments\n");
+        fcprintf(stderr, Yellow, "Unimplemented feature\n");
     }
 }
 /*
@@ -65,14 +68,16 @@ X | X | X
 X | X | X
 */
 void printBoard(const char board[3][3]) {
-    for(short x = 0; x<3; x++) {
-        for(short y = 0; y<3; y++) {
-            if(y != 2)
+    for(int y = 0; y<3;y++) {
+        for(int x= 0; x<3;x++) {
+            if(x != 2)
                 printf("%c | ", board[x][y]);
             else
                 printf("%c\n", board[x][y]);
+            //printf("------------\n");
         }
-        if(x != 2) printf("---------\n");
+        if(y != 2)
+            printf("---------\n");
     }
 }
 void login() {
@@ -89,6 +94,7 @@ void login() {
     if(isFileEmpty(f)) {
 	    printf("No users detected\n");
 	    printf("Creating new user...\n");
+	    sleep(2);
 	    char *uname = readLine("Username: ");
 	    if((f =fopen("users.conf","wb")) == NULL){
 		    fcprintf(stderr, Red, "Couldn't open users.bin, login failed\nerrno: %d\nstrerr: %s\nAborting\n", errno, strerror(errno));
@@ -106,26 +112,34 @@ void login() {
 }
 int getInput() {
 	int opt = readInt("Index: ");
-	if(opt == -1) handler(0);
 	return opt;
 }
-void handleInput(const int inp,char *board,Player pl) {
+void handleInput(const int inp, char *board[3][3]) {
 
 	if(inp < 1 || inp > 9) {
-		fcprintf(stderr,Red, 
-			"Invalid option\n");
+		fcprintf(stderr,Red, "Invalid option\n");
 		return;
 	}
-	if(pl)
-		*(board+inp-1) = 'X';
-	else
-		*(board+inp-1) = 'O';
+	
+	if(inp < 4) {
+		board[0][inp-1] = 'X';
+	}else if(inp < 7) {
+		board[1][inp-4] = 'X';
+	}else{
+		board[2][inp-7] = 'X';
+	}
+	
+	printf("asd\n");
 	return;
 }
+
 
 void handler(int signal) {
 	// TODO Are you sure question
 	cprintf(Red, "Signal: %d\n", signal);
 	raise(SIGKILL);
 }
+/*
+(*board+
 
+*/

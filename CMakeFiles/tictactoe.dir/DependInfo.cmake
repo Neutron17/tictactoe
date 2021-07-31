@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/neutron/Documents/tictactoe/src/main.c" "CMakeFiles/tictactoe.dir/src/main.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/main.c.o.d"
-  "/home/neutron/Documents/tictactoe/src/ntr/color.c" "CMakeFiles/tictactoe.dir/src/ntr/color.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/color.c.o.d"
-  "/home/neutron/Documents/tictactoe/src/ntr/errHandler.c" "CMakeFiles/tictactoe.dir/src/ntr/errHandler.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/errHandler.c.o.d"
-  "/home/neutron/Documents/tictactoe/src/ntr/intconver.c" "CMakeFiles/tictactoe.dir/src/ntr/intconver.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/intconver.c.o.d"
-  "/home/neutron/Documents/tictactoe/src/ntr/nmath.c" "CMakeFiles/tictactoe.dir/src/ntr/nmath.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/nmath.c.o.d"
-  "/home/neutron/Documents/tictactoe/src/ntr/utils.c" "CMakeFiles/tictactoe.dir/src/ntr/utils.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/utils.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/main.c" "CMakeFiles/tictactoe.dir/src/main.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/main.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/ntr/color.c" "CMakeFiles/tictactoe.dir/src/ntr/color.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/color.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/ntr/errHandler.c" "CMakeFiles/tictactoe.dir/src/ntr/errHandler.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/errHandler.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/ntr/intconver.c" "CMakeFiles/tictactoe.dir/src/ntr/intconver.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/intconver.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/ntr/nmath.c" "CMakeFiles/tictactoe.dir/src/ntr/nmath.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/nmath.c.o.d"
+  "/data/data/com.termux/files/home/tictactoe/src/ntr/utils.c" "CMakeFiles/tictactoe.dir/src/ntr/utils.c.o" "gcc" "CMakeFiles/tictactoe.dir/src/ntr/utils.c.o.d"
   )
 
 # Targets to which this target links.

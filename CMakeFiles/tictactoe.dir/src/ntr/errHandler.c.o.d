@@ -1,26 +1,44 @@
 CMakeFiles/tictactoe.dir/src/ntr/errHandler.c.o: \
- /home/neutron/Documents/tictactoe/src/ntr/errHandler.c \
- /usr/include/stdc-predef.h \
- /home/neutron/Documents/tictactoe/src/ntr/errHandler.h \
- /home/neutron/Documents/tictactoe/src/ntr/exception.h \
- /usr/include/setjmp.h /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/setjmp.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
- /usr/include/bits/types.h /usr/include/bits/timesize.h \
- /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/string.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h
+  /data/data/com.termux/files/home/tictactoe/src/ntr/errHandler.c \
+  /data/data/com.termux/files/home/tictactoe/src/ntr/errHandler.h \
+  /data/data/com.termux/files/home/tictactoe/src/ntr/exception.h \
+  /data/data/com.termux/files/usr/include/setjmp.h \
+  /data/data/com.termux/files/usr/include/sys/cdefs.h \
+  /data/data/com.termux/files/usr/include/android/versioning.h \
+  /data/data/com.termux/files/usr/include/android/api-level.h \
+  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
+  /data/data/com.termux/files/usr/include/android/ndk-version.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stddef.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/__stddef_max_align_t.h \
+  /data/data/com.termux/files/usr/include/errno.h \
+  /data/data/com.termux/files/usr/include/linux/errno.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/errno.h \
+  /data/data/com.termux/files/usr/include/asm-generic/errno.h \
+  /data/data/com.termux/files/usr/include/asm-generic/errno-base.h \
+  /data/data/com.termux/files/usr/include/android/legacy_errno_inlines.h \
+  /data/data/com.termux/files/usr/include/stdio.h \
+  /data/data/com.termux/files/usr/include/sys/types.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stdint.h \
+  /data/data/com.termux/files/usr/include/stdint.h \
+  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
+  /data/data/com.termux/files/usr/include/linux/types.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/int-ll64.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  /data/data/com.termux/files/usr/include/asm-generic/bitsperlong.h \
+  /data/data/com.termux/files/usr/include/linux/posix_types.h \
+  /data/data/com.termux/files/usr/include/linux/stddef.h \
+  /data/data/com.termux/files/usr/include/linux/compiler_types.h \
+  /data/data/com.termux/files/usr/include/linux/compiler.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/posix_types.h \
+  /data/data/com.termux/files/usr/include/asm-generic/posix_types.h \
+  /data/data/com.termux/files/usr/include/bits/pthread_types.h \
+  /data/data/com.termux/files/usr/lib/clang/12.0.0/include/stdarg.h \
+  /data/data/com.termux/files/usr/include/string.h \
+  /data/data/com.termux/files/usr/include/xlocale.h \
+  /data/data/com.termux/files/usr/include/bits/strcasecmp.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h \
+  /data/data/com.termux/files/usr/include/asm-generic/fcntl.h \
+  /data/data/com.termux/files/usr/include/bits/seek_constants.h \
+  /data/data/com.termux/files/usr/include/bits/struct_file.h

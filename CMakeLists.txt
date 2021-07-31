@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.8)
-set(CMAKE_C_COMPILER /usr/bin/gcc)
+# set(CMAKE_C_COMPILER /usr/bin/gcc)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -ggdb -O0 -std=gnu18")
 project ("tictactoe")
 # file(GLOB src/*.c SOURCES)

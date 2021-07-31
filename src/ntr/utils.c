@@ -1,7 +1,6 @@
 #include "utils.h"
 #include <time.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 unsigned randTo(unsigned n) {
 	static short x = 0;
@@ -19,7 +18,7 @@ char *readLine(const char *prompt) {
 	if (buff == NULL) return NULL;
 	fgets(buff, UTIL_CUSTOM_SIZE, stdin);
 #else
-	char *buff = (char*)malloc(64*sizeof(char*));
+	char *buff = (char*)malloc(64*sizeof(char));
 	if (buff == NULL) return NULL;
 	fgets(buff, 64, stdin);
 #endif
@@ -28,7 +27,7 @@ char *readLine(const char *prompt) {
 }
 char *nReadLine(const char *prompt, unsigned n) {
         printf("%s", prompt);
-        char *buff = (char*)malloc((n+1)*sizeof(char*));
+        char *buff = (char*)malloc((n+1)*sizeof(char));
         if (buff == NULL) return NULL;
         fgets(buff, n, stdin);
 	return buff;
@@ -39,4 +38,10 @@ int readInt(const char *prompt) {
 	int rv = atoi(buff);
 	free(buff);
 	return rv;
+}
+bool isFileEmpty(FILE *fptr) {
+    if(fptr == NULL)                                          return true;                                      fseek(fptr, 0, SEEK_END);
+    size_t size = ftell(fptr);
+    if(size == 0) return true;
+    return false;
 }
