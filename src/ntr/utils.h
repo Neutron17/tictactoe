@@ -6,8 +6,9 @@
 #endif
 #include <stdio.h>
 unsigned randTo(unsigned n);
+unsigned short shRandTo(unsigned short n);
 char *readLine(const char *prompt);
-char *nReadLine(const char *prompt, unsigned n);
+char *nReadLine(const char *prompt, int n);
 int readInt(const char *prompt);
 #include <stdbool.h>
 bool isFileEmpty(FILE *fptr);

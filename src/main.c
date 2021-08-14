@@ -13,7 +13,7 @@ void parseArgs(int argc, char *argv[]);
 void handler(int signal);
 
 int main(int argc, char *argv[]) {
-	errno = 0;
+    errno = 0;
 	signal(SIGINT, handler);
 	parseArgs(argc, argv);
     volatile bool running = true;
@@ -36,34 +36,39 @@ int main(int argc, char *argv[]) {
 
     Player pl = User;
     if(mode == PvC) {
-        Player winner = None;
-    	while(running) {
+        Player winner;
+        while(running) {
             if(isBoardFull(&board[0][0])) {
                 printBoard(board);
                 printf("Board is full\n");
+            	if(checkWinner(board) != None) {
+                    goto win;
+            	}
                 return 0;
             }
-         if (pl == User) {
-             printBoard(board);
-             if (handleInput(getInput(), &board[0][0], pl)) {
-	             continue;
-             }
-		 }else{
-			 compMove(&board[0][0]);
-		 }
-		 if(pl) pl--;
-		 else pl++;
-   	 	if((winner = checkWinner(board)) != None) {
-            printBoard(board);
-   	 		if(winner == User) {
-                printf("You won\n");
-   	 		}else {
-                printf("You lost\n");
-   	 		}
-            printf("Game Over\n");
-            return 0;
-   	 	}
-	 }
+            if (pl == User) {
+                printBoard(board);
+                if (handleInput(getInput(), &board[0][0], pl)) {
+                    fprintf(stderr, "Invalid input\n");
+                    continue;
+                }
+            }else{
+                compMove(&board[0][0]);
+            }
+            if(pl) pl--;
+            else pl++;
+        win:
+            if((winner = checkWinner(board)) != None) {
+                printBoard(board);
+                if(winner == User) {
+                    printf("You won\n");
+                }else{
+                    printf("You lost\n");
+                }
+                printf("Game Over\n");
+                return 0;
+            }
+        }
     }else if(mode == PvP) {
         KILL();
     }

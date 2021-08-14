@@ -14,13 +14,13 @@ void printBoard(const char board[3][3]) {
 }
 
 void compMove(char* board) {
-	int x = randTo(8);
+	unsigned short x = shRandTo(8);
 	while (x >= 8 || isPlaceUsed(board, x)) {
-		x = randTo(8);
+		x = shRandTo(8);
 	}
 	*(board + x) = 'X';
 }
-bool isPlaceUsed(const char* board, unsigned index) {
+bool isPlaceUsed(const char* board, unsigned short index) {
 	if (*(board + index) != ' ')
 		return true;
 	return false;

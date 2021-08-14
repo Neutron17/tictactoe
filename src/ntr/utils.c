@@ -5,6 +5,15 @@
 unsigned randTo(unsigned n) {
 	static short x = 0;
 	if(x == 0) {
+		srand(time(NULL));
+		x++;
+	}
+	return (rand() % n);
+}
+
+unsigned short shRandTo(unsigned short n) {
+	static short x = 0;
+	if (x == 0) {
 		srand(time(0));
 		x++;
 	}
@@ -25,8 +34,9 @@ char *readLine(const char *prompt) {
 	return buff;
 
 }
-char *nReadLine(const char *prompt, unsigned n) {
-        printf("%s", prompt);
+char *nReadLine(const char *prompt, int n) {
+	if (n < 1) return NULL;
+	printf("%s", prompt);
         char *buff = (char*)malloc((n+1)*sizeof(char));
         if (buff == NULL) return NULL;
         fgets(buff, n, stdin);
@@ -40,8 +50,10 @@ int readInt(const char *prompt) {
 	return rv;
 }
 bool isFileEmpty(FILE *fptr) {
-    if(fptr == NULL)                                          return true;                                      fseek(fptr, 0, SEEK_END);
-    size_t size = ftell(fptr);
+    if(fptr == NULL)
+		return true;
+	fseek(fptr, 0, SEEK_END);
+    const size_t size = ftell(fptr);
     if(size == 0) return true;
     return false;
 }
