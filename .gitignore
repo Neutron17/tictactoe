@@ -2,3 +2,10 @@ CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
 build
+build/**
+out/**
+out
+.vscode/**
+.vscode
+.vs/**
+.vs

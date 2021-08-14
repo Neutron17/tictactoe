@@ -1,3 +1,0 @@
-/home/neutron/Documents/tictactoe/build/CMakeFiles/rebuild_cache.dir
-/home/neutron/Documents/tictactoe/build/CMakeFiles/edit_cache.dir
-/home/neutron/Documents/tictactoe/build/CMakeFiles/tictactoe.dir
