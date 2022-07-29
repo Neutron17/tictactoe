@@ -17,9 +17,9 @@ int main(int argc, char *argv[]) {
 	signal(SIGINT, handler);
 	parseArgs(argc, argv);
     volatile bool running = true;
-    char board[3][3] = { 
+    char board[3][3] = {
         {' ', ' ', ' '},
-        {' ', ' ', ' '}, 
+        {' ', ' ', ' '},
         {' ', ' ', ' '}
     };
     // FILE *fptr = fopen("config.conf", "r+b");
@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
         while(running) {
             if(isBoardFull(&board[0][0])) {
                 printBoard(board);
-                printf("Board is full\n");
+                printf("DRAW: Board is full\n");
             	if(checkWinner(board) != None) {
                     goto win;
             	}
@@ -76,7 +76,7 @@ int main(int argc, char *argv[]) {
 }
 void parseArgs(int argc, char *argv[]) {
     if(argc != 1) {
-        fcprintf(stderr, Yellow, 
+        fcprintf(stderr, Yellow,
 	"Warning: Unimplemented feature: Arguments\n");
     }
 }

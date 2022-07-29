@@ -12,3 +12,4 @@
 bool handleInput(const int inp, char* board, Player pl);
 int getInput();
 #endif
+

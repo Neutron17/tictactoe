@@ -20,7 +20,7 @@
     COLOR(NTR_COLOR_BLUE)                   \
     COLOR(NTR_COLOR_MAGENTA)                \
     COLOR(NTR_COLOR_CYAN)                   \
-    COLOR(NTR_COLOR_WHITE)    
+    COLOR(NTR_COLOR_WHITE)
 
 #define GENERATE_ENUM(ENUM) ENUM,
 #define ColToStr(x) COLOR_STRING[x]
@@ -55,3 +55,4 @@ int fscprintf(FILE *s, int color, char *dest, const char *format, ...);
 int fnscprintf(FILE *s, int color, char *dest, int maxSize, const char *format, ...);
 #endif
 #endif
+

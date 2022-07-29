@@ -20,7 +20,8 @@ typedef enum {
 } Mode;
 void printBoard(const char board[3][3]);
 void compMove(char* board);
-bool isPlaceUsed(const char* board, unsigned index);
+bool isPlaceUsed(const char* board, unsigned short index);
 bool isBoardFull(const char* board);
 Player checkWinner(const char board[3][3]);
 #endif
+

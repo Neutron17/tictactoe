@@ -24,3 +24,4 @@ bool handleInput(const int inp, char* board, Player pl) {
 	*(board + inp - 1) = 'O';
 	return false;
 }
+

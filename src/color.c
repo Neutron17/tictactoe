@@ -23,7 +23,7 @@ int __fscprintf(FILE *s, int color, char **dest, const char *format, va_list arg
     if((new = (char*)malloc(size)) == NULL) return -1;
     snprintf(new, size, "%s%s", COLOR_STRING[color], format);
     res = vsnprintf(*dest, size, new, args);
-    sprintf("%s", COLOR_STRING[Reset]);
+    sprintf(*dest, "%s", COLOR_STRING[Reset]);
     free(new);
     return res;
 }
